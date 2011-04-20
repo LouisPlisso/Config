@@ -621,6 +621,7 @@ compiler-output-customization	latex-suite.txt	/*compiler-output-customization*
 compiler-rules	latex-suite.txt	/*compiler-rules*
 compiling-multiple	latex-suite.txt	/*compiling-multiple*
 completion-window-preferences	latex-suite.txt	/*completion-window-preferences*
+cs	surround.txt	/*cs*
 custom-macros-menu	latex-suite.txt	/*custom-macros-menu*
 custom-packages	latex-suite.txt	/*custom-packages*
 customize-alt-key-maps	latex-suite.txt	/*customize-alt-key-maps*
@@ -642,6 +643,7 @@ description	latexhelp.txt	/*description*
 diacritic-mappings	latex-suite.txt	/*diacritic-mappings*
 displaymath	latexhelp.txt	/*displaymath*
 draft	latexhelp.txt	/*draft*
+ds	surround.txt	/*ds*
 editing-folding	latex-suite.txt	/*editing-folding*
 empty	latexhelp.txt	/*empty*
 enabling-searching	latex-suite.txt	/*enabling-searching*
@@ -697,6 +699,8 @@ global-example	yankring.txt	/*global-example*
 greek-letter-mappings	latex-suite.txt	/*greek-letter-mappings*
 headings	latexhelp.txt	/*headings*
 hyph-	latexhelp.txt	/*hyph-*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 i_CTRL-R_<Tab>	snipMate.txt	/*i_CTRL-R_<Tab>*
 im_1	imaps.txt	/*im_1*
 imaps-usage	imaps.txt	/*imaps-usage*
@@ -1264,6 +1268,14 @@ supertab-preventcomplete	supertab.txt	/*supertab-preventcomplete*
 supertab-usage	supertab.txt	/*supertab-usage*
 supertab.txt	supertab.txt	/*supertab.txt*
 supporting-packages	latex-suite.txt	/*supporting-packages*
+surround	surround.txt	/*surround*
+surround-author	surround.txt	/*surround-author*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 tab'	latexhelp.txt	/*tab'*
 tab+	latexhelp.txt	/*tab+*
 tab-	latexhelp.txt	/*tab-*
@@ -1320,7 +1332,10 @@ vcscommand-statusline	vcscommand.txt	/*vcscommand-statusline*
 vcscommand.txt	vcscommand.txt	/*vcscommand.txt*
 verbatim	latexhelp.txt	/*verbatim*
 verse	latexhelp.txt	/*verse*
+vs	surround.txt	/*vs*
 why-IMAP	latex-suite.txt	/*why-IMAP*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
 yankring	yankring.txt	/*yankring*
 yankring-commands	yankring.txt	/*yankring-commands*
 yankring-configure	yankring.txt	/*yankring-configure*
@@ -1336,3 +1351,5 @@ yankring-visual-example	yankring.txt	/*yankring-visual-example*
 yankring-window	yankring.txt	/*yankring-window*
 yankring-window-example	yankring.txt	/*yankring-window-example*
 yankring.txt	yankring.txt	/*yankring.txt*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*
