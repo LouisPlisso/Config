@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Dernier motif de recherche  :
-~MSle0~/git
+~MSle0~/marker
 
 # Dernier motif de recherche Substitue  :
 ~MSle0&\s\+$
@@ -17,9 +17,12 @@
 $
 
 # Historique ligne de commande (chronologie décroissante) :
+:py EvaluateCurrentRange()
+:py EvaluateCurrentRange()j
+:e filter_streaming.py
+:e streaming_tools.py
 :wqa
 :e cdfplot_new.py
-:e filter_streaming.py
 :helptags doc
 :help supertab-contextexample
 :e vimrc_me
@@ -314,12 +317,8 @@ $
 :b ~/workspace/TP1/res/layout/main.xml
 :b ~/
 :b ~/workspace/TP1/res/values-fr/menu_strings.xml
-:b menu_st
-:e ../menu/contextmenu.xml
-:e ../values-fr/menu_strings.xml
 
 # Historique chaîne de recherche (chronologie décroissante) :
-?/git
 ? \s\+$
 ?/marker
 ??marke
@@ -619,6 +618,7 @@ $
 ?/sec:extra
 ?/bib
 ?/fig:loss_re_yt
+?/ratio of
 
 # Historique expression (chronologie décroissante) :
 
@@ -672,10 +672,10 @@ $
 # Historique ligne de saisie (chronologie décroissante) :
 
 # Registres :
-"0	LINE	0
-	    'test'
-""1	CHAR	0
+"0	CHAR	0
 	""
+""1	LINE	0
+	    'test'
 "2	CHAR	0
 	FTTH
 "3	CHAR	0
@@ -783,7 +783,7 @@ $
 	" "
 
 # Marques dans le fichier :
-'0  196  24  ~/config/shell_aliases_functions
+'0  31  0  ~/.vim/ftplugin/python/python.vim
 '1  61  23  ~/workspace/spydump/tools/final_plots.py
 '2  39  35  ~/.vim/vimrc
 '3  330  0  ~/.vim/vimrc
@@ -795,180 +795,121 @@ $
 '9  10  0  ~/.vimrc
 
 # Liste de sauts (le plus récent en premier) :
+-'  31  0  ~/.vim/ftplugin/python/python.vim
+-'  33  0  ~/.vim/ftplugin/python/python.vim
+-'  61  23  ~/workspace/spydump/tools/final_plots.py
+-'  61  4  ~/workspace/spydump/tools/__Tag_List__
+-'  70  0  ~/workspace/spydump/tools/__Tag_List__
+-'  1  0  ~/workspace/spydump/tools/__Tag_List__
+-'  71  4  ~/workspace/spydump/tools/__Tag_List__
+-'  2  0  ~/workspace/spydump/tools/__Tag_List__
+-'  36  9  ~/workspace/spydump/tools/final_plots.py
+-'  1260  20  ~/workspace/spydump/tools/filter_streaming.py
+-'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
+-'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
+-'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
+-'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  24  0  ~/workspace/spydump/tools/final_plots.py
+-'  58  4  ~/workspace/spydump/tools/final_plots.py
+-'  39  35  ~/.vim/vimrc
+-'  330  0  ~/.vim/vimrc
+-'  353  0  ~/.vim/vimrc
+-'  440  0  ~/.vim/vimrc_me
+-'  386  0  ~/.vim/vimrc
+-'  118  0  ~/.vim/vimrc
+-'  26  0  ~/.vim/vimrc
+-'  294  0  ~/.vim/vimrc_me
+-'  13  0  ~/.vim/ftplugin/python/python.vim
+-'  2  0  ~/.vim/ftplugin/python/python.vim
+-'  1  0  ~/.vim/vimrc
+-'  329  0  ~/.vim/vimrc
+-'  340  0  ~/.vim/vimrc
+-'  1  0  ~/.vim/ftplugin/python/python.vim
+-'  343  0  ~/.vim/vimrc
+-'  344  0  ~/.vim/vimrc
+-'  334  0  ~/.vim/vimrc
+-'  339  0  ~/.vim/vimrc
+-'  341  0  ~/.vim/vimrc
+-'  203  21  ~/.vim/vimrc
+-'  195  72  ~/.vim/vimrc
+-'  194  11  ~/.vim/vimrc
+-'  125  0  ~/.vim/vimrc
+-'  119  0  ~/.vim/vimrc
+-'  115  0  ~/.vim/vimrc
+-'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
+-'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
+-'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
+-'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  39  35  ~/.vim/vimrc
+-'  330  0  ~/.vim/vimrc
+-'  353  0  ~/.vim/vimrc
+-'  440  0  ~/.vim/vimrc_me
+-'  386  0  ~/.vim/vimrc
+-'  118  0  ~/.vim/vimrc
+-'  26  0  ~/.vim/vimrc
+-'  294  0  ~/.vim/vimrc_me
+-'  1  0  ~/.vim/vimrc
+-'  329  0  ~/.vim/vimrc
+-'  340  0  ~/.vim/vimrc
+-'  343  0  ~/.vim/vimrc
+-'  344  0  ~/.vim/vimrc
+-'  334  0  ~/.vim/vimrc
+-'  339  0  ~/.vim/vimrc
+-'  341  0  ~/.vim/vimrc
+-'  203  21  ~/.vim/vimrc
+-'  195  72  ~/.vim/vimrc
+-'  194  11  ~/.vim/vimrc
+-'  125  0  ~/.vim/vimrc
+-'  119  0  ~/.vim/vimrc
+-'  115  0  ~/.vim/vimrc
 -'  196  24  ~/config/shell_aliases_functions
 -'  31  0  ~/config/shell_aliases_functions
+-'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
+-'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
+-'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
+-'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
+-'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
+-'  39  35  ~/.vim/vimrc
+-'  330  0  ~/.vim/vimrc
+-'  353  0  ~/.vim/vimrc
+-'  440  0  ~/.vim/vimrc_me
 -'  61  23  ~/workspace/spydump/tools/final_plots.py
+-'  61  4  ~/workspace/spydump/tools/__Tag_List__
+-'  70  0  ~/workspace/spydump/tools/__Tag_List__
+-'  1  0  ~/workspace/spydump/tools/__Tag_List__
+-'  71  4  ~/workspace/spydump/tools/__Tag_List__
+-'  2  0  ~/workspace/spydump/tools/__Tag_List__
 -'  36  9  ~/workspace/spydump/tools/final_plots.py
 -'  1260  20  ~/workspace/spydump/tools/filter_streaming.py
 -'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
--'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
--'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
--'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  24  0  ~/workspace/spydump/tools/final_plots.py
--'  58  4  ~/workspace/spydump/tools/final_plots.py
--'  39  35  ~/.vim/vimrc
--'  330  0  ~/.vim/vimrc
--'  353  0  ~/.vim/vimrc
--'  440  0  ~/.vim/vimrc_me
--'  386  0  ~/.vim/vimrc
--'  118  0  ~/.vim/vimrc
--'  26  0  ~/.vim/vimrc
--'  294  0  ~/.vim/vimrc_me
--'  32  0  ~/.vim/ftplugin/python/python.vim
--'  13  0  ~/.vim/ftplugin/python/python.vim
--'  2  0  ~/.vim/ftplugin/python/python.vim
--'  1  0  ~/.vim/vimrc
--'  329  0  ~/.vim/vimrc
--'  340  0  ~/.vim/vimrc
--'  1  0  ~/.vim/ftplugin/python/python.vim
--'  343  0  ~/.vim/vimrc
--'  344  0  ~/.vim/vimrc
--'  334  0  ~/.vim/vimrc
--'  339  0  ~/.vim/vimrc
--'  341  0  ~/.vim/vimrc
--'  203  21  ~/.vim/vimrc
--'  195  72  ~/.vim/vimrc
--'  194  11  ~/.vim/vimrc
--'  125  0  ~/.vim/vimrc
--'  119  0  ~/.vim/vimrc
--'  115  0  ~/.vim/vimrc
--'  1260  20  ~/workspace/spydump/tools/filter_streaming.py
--'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
--'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
--'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
--'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  39  35  ~/.vim/vimrc
--'  330  0  ~/.vim/vimrc
--'  353  0  ~/.vim/vimrc
--'  440  0  ~/.vim/vimrc_me
--'  386  0  ~/.vim/vimrc
--'  118  0  ~/.vim/vimrc
--'  26  0  ~/.vim/vimrc
--'  294  0  ~/.vim/vimrc_me
--'  32  0  ~/.vim/ftplugin/python/python.vim
--'  13  0  ~/.vim/ftplugin/python/python.vim
--'  2  0  ~/.vim/ftplugin/python/python.vim
--'  1  0  ~/.vim/vimrc
--'  329  0  ~/.vim/vimrc
--'  340  0  ~/.vim/vimrc
--'  1  0  ~/.vim/ftplugin/python/python.vim
--'  343  0  ~/.vim/vimrc
--'  344  0  ~/.vim/vimrc
--'  334  0  ~/.vim/vimrc
--'  339  0  ~/.vim/vimrc
--'  341  0  ~/.vim/vimrc
--'  203  21  ~/.vim/vimrc
--'  195  72  ~/.vim/vimrc
--'  194  11  ~/.vim/vimrc
--'  125  0  ~/.vim/vimrc
--'  119  0  ~/.vim/vimrc
--'  115  0  ~/.vim/vimrc
--'  61  23  ~/workspace/spydump/tools/final_plots.py
--'  36  9  ~/workspace/spydump/tools/final_plots.py
--'  1260  20  ~/workspace/spydump/tools/filter_streaming.py
--'  216  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  134  39  ~/workspace/spydump/tools/cdfplot_new.py
--'  128  28  ~/workspace/spydump/tools/cdfplot_new.py
--'  121  49  ~/workspace/spydump/tools/cdfplot_new.py
--'  112  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  110  20  ~/workspace/spydump/tools/cdfplot_new.py
--'  109  0  ~/workspace/spydump/tools/cdfplot_new.py
--'  24  0  ~/workspace/spydump/tools/final_plots.py
--'  58  4  ~/workspace/spydump/tools/final_plots.py
--'  39  35  ~/.vim/vimrc
--'  330  0  ~/.vim/vimrc
--'  353  0  ~/.vim/vimrc
--'  440  0  ~/.vim/vimrc_me
--'  386  0  ~/.vim/vimrc
--'  118  0  ~/.vim/vimrc
--'  26  0  ~/.vim/vimrc
--'  294  0  ~/.vim/vimrc_me
--'  32  0  ~/.vim/ftplugin/python/python.vim
--'  13  0  ~/.vim/ftplugin/python/python.vim
--'  2  0  ~/.vim/ftplugin/python/python.vim
--'  1  0  ~/.vim/vimrc
--'  329  0  ~/.vim/vimrc
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
 
-> ~/config/shell_aliases_functions
-	"	196	24
-	^	196	25
-	.	196	24
-	+	135	8
-	+	133	9
-	+	134	25
-	+	74	71
-	+	208	49
-	+	104	0
-	+	28	14
-	+	126	43
-	+	115	35
-	+	111	55
-	+	115	39
-	+	213	29
-	+	213	0
-	+	211	46
-	+	213	0
-	+	212	27
-	+	211	38
-	+	212	31
-	+	211	44
-	+	137	31
-	+	138	29
-	+	139	36
-	+	111	0
-	+	116	77
-	+	116	91
-	+	117	0
-	+	116	63
-	+	116	107
-	+	117	0
-	+	211	43
-	+	215	0
-	+	216	0
-	+	76	54
-	+	112	15
-	+	112	41
-	+	112	0
-	+	112	25
-	+	112	22
-	+	114	52
-	+	113	35
-	+	114	0
-	+	115	31
-	+	30	17
-	+	193	23
-	+	5	0
-	+	78	19
-	+	79	0
-	+	79	95
-	+	79	71
-	+	80	0
-	+	79	78
-	+	79	78
-	+	79	129
-	+	80	0
-	+	79	152
-	+	194	23
-	+	195	7
-	+	107	7
-	+	108	7
-	+	111	21
-	+	112	26
-	+	214	29
-	+	199	0
-	+	198	41
-	+	31	42
-	+	32	29
-	+	31	37
-	+	196	24
+> ~/.vim/ftplugin/python/python.vim
+	"	31	0
+	^	31	0
+	.	31	0
+	+	1	58
+	+	1	0
+	+	1	0
+	+	2	0
+	+	13	0
+	+	13	0
+	+	12	0
+	+	24	0
+	+	23	0
+	+	34	0
+	+	33	0
+	+	32	0
+	+	31	0
 
 > ~/workspace/spydump/tools/final_plots.py
 	"	61	23
@@ -1075,6 +1016,110 @@ $
 	+	61	0
 	z	61	23
 
+> ~/workspace/spydump/tools/__Tag_List__
+	"	61	4
+	.	70	0
+	+	1972	0
+	+	2013	0
+	+	2030	0
+	+	1913	0
+	+	1896	0
+	+	1896	0
+	+	1896	0
+	+	1896	0
+	+	1912	0
+	+	1895	0
+	+	1756	0
+	+	1768	0
+	+	1731	0
+	+	1731	0
+	+	1833	0
+	+	1731	0
+	+	1730	0
+	+	1683	0
+	+	1700	0
+	+	1642	0
+	+	1576	0
+	+	1510	0
+	+	1442	0
+	+	1363	0
+	+	1374	0
+	+	1362	0
+	+	1160	0
+	+	1294	0
+	+	1091	0
+	+	1010	0
+	+	930	0
+	+	929	0
+	+	861	0
+	+	810	0
+	+	813	0
+	+	860	0
+	+	809	0
+	+	724	0
+	+	724	0
+	+	724	0
+	+	724	0
+	+	723	0
+	+	724	0
+	+	655	0
+	+	654	0
+	+	570	0
+	+	570	0
+	+	569	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	529	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	546	0
+	+	529	0
+	+	545	0
+	+	529	0
+	+	529	0
+	+	460	0
+	+	528	0
+	+	435	0
+	+	434	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	409	0
+	+	351	0
+	+	379	0
+	+	351	0
+	+	408	0
+	+	350	0
+	+	282	0
+	+	282	0
+	+	282	0
+	+	282	0
+	+	282	0
+	+	281	0
+	+	282	0
+	+	213	0
+	+	212	0
+	+	144	0
+	+	144	0
+	+	143	0
+	+	71	0
+	+	71	0
+	+	70	0
+
 > ~/workspace/spydump/tools/filter_streaming.py
 	"	1260	20
 	^	737	77
@@ -1180,6 +1225,79 @@ $
 	+	672	23
 	+	683	24
 	z	691	0
+
+> ~/config/shell_aliases_functions
+	"	196	24
+	^	196	25
+	.	196	24
+	+	135	8
+	+	133	9
+	+	134	25
+	+	74	71
+	+	208	49
+	+	104	0
+	+	28	14
+	+	126	43
+	+	115	35
+	+	111	55
+	+	115	39
+	+	213	29
+	+	213	0
+	+	211	46
+	+	213	0
+	+	212	27
+	+	211	38
+	+	212	31
+	+	211	44
+	+	137	31
+	+	138	29
+	+	139	36
+	+	111	0
+	+	116	77
+	+	116	91
+	+	117	0
+	+	116	63
+	+	116	107
+	+	117	0
+	+	211	43
+	+	215	0
+	+	216	0
+	+	76	54
+	+	112	15
+	+	112	41
+	+	112	0
+	+	112	25
+	+	112	22
+	+	114	52
+	+	113	35
+	+	114	0
+	+	115	31
+	+	30	17
+	+	193	23
+	+	5	0
+	+	78	19
+	+	79	0
+	+	79	95
+	+	79	71
+	+	80	0
+	+	79	78
+	+	79	78
+	+	79	129
+	+	80	0
+	+	79	152
+	+	194	23
+	+	195	7
+	+	107	7
+	+	108	7
+	+	111	21
+	+	112	26
+	+	214	29
+	+	199	0
+	+	198	41
+	+	31	42
+	+	32	29
+	+	31	37
+	+	196	24
 
 > ~/workspace/spydump/tools/cdfplot_new.py
 	"	216	0
@@ -1409,22 +1527,6 @@ $
 	+	140	0
 	+	73	0
 	+	2	0
-
-> ~/.vim/ftplugin/python/python.vim
-	"	32	0
-	^	32	0
-	.	32	0
-	+	1	58
-	+	1	0
-	+	1	0
-	+	2	0
-	+	13	0
-	+	13	0
-	+	12	0
-	+	24	0
-	+	23	0
-	+	33	0
-	+	32	0
 
 > ~/.vim/ftplugin/python/[YankRing]
 	"	5	0
@@ -2065,110 +2167,6 @@ $
 
 > ~/streaming/rapport/imc/zsh
 	"	1	0
-
-> ~/workspace/spydump/tools/__Tag_List__
-	"	73	4
-	.	74	0
-	+	2018	0
-	+	1915	0
-	+	1904	0
-	+	1903	0
-	+	1944	0
-	+	1961	0
-	+	1844	0
-	+	1827	0
-	+	1827	0
-	+	1827	0
-	+	1827	0
-	+	1843	0
-	+	1826	0
-	+	1687	0
-	+	1699	0
-	+	1662	0
-	+	1662	0
-	+	1764	0
-	+	1662	0
-	+	1661	0
-	+	1614	0
-	+	1631	0
-	+	1573	0
-	+	1507	0
-	+	1441	0
-	+	1373	0
-	+	1294	0
-	+	1305	0
-	+	1293	0
-	+	1091	0
-	+	1225	0
-	+	1022	0
-	+	941	0
-	+	861	0
-	+	860	0
-	+	792	0
-	+	741	0
-	+	744	0
-	+	791	0
-	+	740	0
-	+	655	0
-	+	655	0
-	+	655	0
-	+	655	0
-	+	654	0
-	+	655	0
-	+	586	0
-	+	585	0
-	+	501	0
-	+	501	0
-	+	500	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	460	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	477	0
-	+	460	0
-	+	476	0
-	+	460	0
-	+	460	0
-	+	391	0
-	+	459	0
-	+	366	0
-	+	365	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	282	0
-	+	310	0
-	+	282	0
-	+	339	0
-	+	281	0
-	+	213	0
-	+	213	0
-	+	213	0
-	+	213	0
-	+	213	0
-	+	212	0
-	+	213	0
-	+	144	0
-	+	143	0
-	+	75	0
-	+	75	0
-	+	74	0
 
 > ~/workspace/spydump/tools/streaming_tools.py
 	"	27	0
