@@ -2,12 +2,6 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 "autocmd FileType python setlocal omnifunc=pysmell#Complete
 autocmd FileType python compiler pylint
 
-"Delete trailing white space, useful for Python ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
