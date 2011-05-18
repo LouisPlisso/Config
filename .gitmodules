@@ -85,6 +85,7 @@
 [submodule "bundle/RltvNmbr"]
 	path = bundle/RltvNmbr
 	url = https://github.com/vim-scripts/RltvNmbr.vim.git
+	ignore = untracked
 [submodule "bundle/pylint"]
 	path = bundle/pylint
 	url = https://github.com/vim-scripts/pylint.vim.git
