@@ -2,6 +2,12 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 "autocmd FileType python setlocal omnifunc=pysmell#Complete
 autocmd FileType python compiler pylint
 
+"from
+"http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
+autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+" Execute file being edited with <Shift> + E:
+map <buffer> <leader><S-e> :w<CR>:!/usr/bin/env python % <CR>
+
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
