@@ -90,6 +90,8 @@ function! s:DefPython()
 python << PYTHONEOF
 import sys, tokenize, cStringIO, types
 from token import NAME, DEDENT, NEWLINE, STRING
+import warnings
+warnings.simplefilter("ignore")
 
 debugstmts=[]
 def dbg(s): debugstmts.append(s)
