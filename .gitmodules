@@ -55,15 +55,9 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
-[submodule "bundle/bash-support"]
-	path = bundle/bash-support
-	url = https://github.com/vim-scripts/bash-support.vim.git
 [submodule "bundle/CmdlineComplete"]
 	path = bundle/CmdlineComplete
 	url = https://github.com/vim-scripts/CmdlineComplete.git
-[submodule "bundle/c"]
-	path = bundle/c
-	url = https://github.com/vim-scripts/c.vim.git
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
@@ -89,3 +83,9 @@
 [submodule "bundle/pylint"]
 	path = bundle/pylint
 	url = https://github.com/vim-scripts/pylint.vim.git
+[submodule "bundle/c"]
+	path = bundle/c
+	url = https://LouisPlisso@github.com/LouisPlisso/c.vim.git
+[submodule "bundle/bash-support"]
+	path = bundle/bash-support
+	url = https://LouisPlisso@github.com/LouisPlisso/bash-support.vim.git
