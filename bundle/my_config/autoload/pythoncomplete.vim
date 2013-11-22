@@ -288,7 +288,7 @@ class Scope(object):
         return sub
 
     def doc(self,str):
-        """ Clean up a docstring """
+        ''' Clean up a docstring '''
         d = str.replace('\n',' ')
         d = d.replace('\t',' ')
         while d.find('  ') > -1: d = d.replace('  ',' ')
@@ -302,11 +302,11 @@ class Scope(object):
         self.locals.append(loc)
 
     def copy_decl(self,indent=0):
-        """ Copy a scope's declaration only, at the specified indent level - not local variables """
+        ''' Copy a scope's declaration only, at the specified indent level - not local variables '''
         return Scope(self.name,indent,self.docstr)
 
     def _checkexisting(self,test):
-        "Convienance function... keep out duplicates"
+        'Convienance function... keep out duplicates'
         if test.find('=') > -1:
             var = test.split('=')[0].strip()
             for l in self.locals:
@@ -314,8 +314,8 @@ class Scope(object):
                     self.locals.remove(l)
 
     def get_code(self):
-        str = ""
-        if len(self.docstr) > 0: str += '"""'+self.docstr+'"""\n'
+        str = ''
+        if len(self.docstr) > 0: str += "'''"+self.docstr+"'''\n"
         for l in self.locals:
             if l.startswith('import'): str += l+'\n'
         str += 'class _PyCmplNoType:\n    def __getattr__(self,name):\n        return None\n'
@@ -354,7 +354,7 @@ class Class(Scope):
         str = '%sclass %s' % (self.currentindent(),self.name)
         if len(self.supers) > 0: str += '(%s)' % ','.join(self.supers)
         str += ':\n'
-        if len(self.docstr) > 0: str += self.childindent()+'"""'+self.docstr+'"""\n'
+        if len(self.docstr) > 0: str += self.childindent()+"'''"+self.docstr+"'''\n"
         if len(self.subscopes) > 0:
             for s in self.subscopes: str += s.get_code()
         else:
@@ -369,10 +369,10 @@ class Function(Scope):
     def copy_decl(self,indent=0):
         return Function(self.name,self.params,indent, self.docstr)
     def get_code(self):
-        str = "%sdef %s(%s):\n" % \
+        str = '%sdef %s(%s):\n' % \
             (self.currentindent(),self.name,','.join(self.params))
-        if len(self.docstr) > 0: str += self.childindent()+'"""'+self.docstr+'"""\n'
-        str += "%spass\n" % self.childindent()
+        if len(self.docstr) > 0: str += self.childindent()+"'''"+self.docstr+"'''\n"
+        str += '%spass\n' % self.childindent()
         return str
 
 class PyParser:
@@ -396,7 +396,7 @@ class PyParser:
             tokentype, token, indent = self.next()
             if tokentype != NAME: break
             name.append(token)
-        return (".".join(name), token)
+        return ('.'.join(name), token)
 
     def _parseimportlist(self):
         imports = []
@@ -406,9 +406,9 @@ class PyParser:
             name2 = ''
             if token == 'as': name2, token = self._parsedotname()
             imports.append((name, name2))
-            while token != "," and "\n" not in token:
+            while token != ',' and '\n' not in token:
                 tokentype, token, indent = self.next()
-            if token != ",": break
+            if token != ',': break
         return imports
 
     def _parenparse(self):
@@ -423,15 +423,15 @@ class PyParser:
                 name = ''
             if token == '(':
                 level += 1
-                name += "("
+                name += '('
             elif token == ')':
                 level -= 1
                 if level == 0: break
-                else: name += ")"
+                else: name += ')'
             elif token == ',' and level == 1:
                 pass
             else:
-                name += "%s " % str(token)
+                name += '%s ' % str(token)
         return names
 
     def _parsefunction(self,indent):
@@ -465,7 +465,7 @@ class PyParser:
         assign=''
         tokentype, token, indent = self.next()
         if tokentype == tokenize.STRING or token == 'str':  
-            return '""'
+            return "''"
         elif token == '(' or token == 'tuple':
             return '()'
         elif token == '[' or token == 'list':
@@ -493,7 +493,7 @@ class PyParser:
                 elif level == 0:
                     if token in (';','\n'): break
                     assign += token
-        return "%s" % assign
+        return '%s' % assign
 
     def next(self):
         type, token, (lineno, indent), end, self.parserline = self.gen.next()
