@@ -1,1 +1,0 @@
-../downloads/vim-bufstat/plugin/bufstat.vim
