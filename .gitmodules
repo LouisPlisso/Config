@@ -101,3 +101,6 @@
 [submodule "bundle/Pydiction"]
 	path = bundle/Pydiction
 	url = https://github.com/vim-scripts/Pydiction.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
