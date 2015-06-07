@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/louis/thesis/TMA/v08_revisited.new'
 let g:netrw_dirhist_2='/Users/lplisson/config/pentadactyl'
 let g:netrw_dirhist_3='/Users/lplissonneau/.ssh'
+let g:netrw_dirhist_4='/Users/lplissonneau/craicathlon/sdlb/example/grapher'
+let g:netrw_dirhist_5='/Users/lplissonneau/SRE/sitevis/conf'
