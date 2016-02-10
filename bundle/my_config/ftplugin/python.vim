@@ -1,7 +1,7 @@
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
 "autocmd FileType python setlocal omnifunc=pysmell#Complete
 "
-autocmd FileType python compiler pylint
+autocmd FileType python compiler pyflakes2
 
 "from
 "http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
