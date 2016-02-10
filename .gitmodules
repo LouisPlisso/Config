@@ -38,7 +38,7 @@
 	path = bundle/ropevim
 	url = git@github.com:sontek/rope-vim.git
 [submodule "bundle/pyflakes"]
-	path = bundle/pyflakes
+	path = pyflakes
 	url = git@github.com:mitechie/pyflakes-pathogen.git
 [submodule "bundle/bufstat"]
 	path = bundle/bufstat
@@ -99,7 +99,7 @@
 	path = bundle/vim-fakeclip
 	url = git@github.com:kana/vim-fakeclip.git
 [submodule "bundle/jedi-vim"]
-	path = bundle/jedi-vim
+	path = jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
 [submodule "bundle/YankRing.vim"]
 	path = bundle/YankRing.vim
