@@ -48,7 +48,7 @@
 	url = git@github.com:tpope/vim-repeat.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git:/github.com:/altercation/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
@@ -66,7 +66,7 @@
 	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
-	url = git@repo.or.cz/r/vcscommand.git
+	url = git@repo.or.cz/vcscommand.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
