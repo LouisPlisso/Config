@@ -37,9 +37,6 @@
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
 	url = git@github.com:sontek/rope-vim.git
-[submodule "bundle/pyflakes"]
-	path = pyflakes
-	url = git@github.com:mitechie/pyflakes-pathogen.git
 [submodule "bundle/bufstat"]
 	path = bundle/bufstat
 	url = git@github.com:rson/vim-bufstat.git
@@ -122,9 +119,6 @@
 [submodule "bundle/vim-projectionist"]
 	path = bundle/vim-projectionist
 	url = git@github.com:tpope/vim-projectionist.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
@@ -134,3 +128,9 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git

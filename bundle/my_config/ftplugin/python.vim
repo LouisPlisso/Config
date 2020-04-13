@@ -1,7 +1,8 @@
 "autocmd FileType python set omnifunc=pythoncomplete#Complete
 "autocmd FileType python setlocal omnifunc=pysmell#Complete
 "
-autocmd FileType python compiler pyflakes2
+"autocmd FileType python compiler pyflakes
+""autocmd FileType python compiler "pylint -d C0111,W0621"
 
 "from
 "http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
@@ -26,13 +27,13 @@ set nosmartindent
 
 " Execute a selection of code (very cool!)
 " Use VISUAL to select a range and then hit ctrl-h to execute it.
-python << EOL
-import vim
-def EvaluateCurrentRange():
-    eval(compile('\n'.join(vim.current.range),'','exec'),globals())
-EOL
-
-vmap <C-h> :py EvaluateCurrentRange()
+"python << EOL
+" import vim
+" def EvaluateCurrentRange():
+"     eval(compile('\n'.join(vim.current.range),'','exec'),globals())
+" EOL
+"
+" vmap <C-h> :py EvaluateCurrentRange()
 
 "autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
 
