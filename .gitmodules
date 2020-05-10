@@ -83,9 +83,6 @@
 [submodule "bundle/python_syntax"]
 	path = bundle/python_syntax
 	url = git@github.com:vim-scripts/python.vim--Vasiliev.git
-[submodule "bundle/python_indent"]
-	path = bundle/python_indent
-	url = git@github.com:vim-scripts/indentpython.vim.git
 [submodule "bundle/python_move"]
 	path = bundle/python_move
 	url = git@github.com:vim-scripts/python.vim.git
@@ -122,9 +119,6 @@
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
-[submodule "bundle/indentpython.vim"]
-	path = bundle/indentpython.vim
-	url = git@github.com:vim-scripts/indentpython.vim.git
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
@@ -134,3 +128,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
