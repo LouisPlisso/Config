@@ -1,133 +1,127 @@
-[submodule "vim-pathogen"]
-	path = vim-pathogen
-	url = git@github.com:tpope/vim-pathogen.git
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/plugins/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/surround"]
-	path = bundle/surround
+	path = pack/plugins/surround
 	url = git@github.com:tpope/vim-surround.git
 [submodule "bundle/supertab"]
-	path = bundle/supertab
+	path = pack/plugins/supertab
 	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/command-t"]
-	path = bundle/command-t
+	path = pack/plugins/command-t
 	url = git@github.com:wincent/Command-T.git
 [submodule "bundle/ack"]
-	path = bundle/ack
+	path = pack/plugins/ack
 	url = git@github.com:mileszs/ack.vim.git
 [submodule "bundle/gundo"]
-	path = bundle/gundo
+	path = pack/plugins/gundo
 	url = git@github.com:sjl/gundo.vim.git
 [submodule "bundle/pydoc"]
-	path = bundle/pydoc
+	path = pack/plugins/pydoc
 	url = git@github.com:fs111/pydoc.vim.git
 [submodule "bundle/pep8"]
-	path = bundle/pep8
+	path = pack/plugins/pep8
 	url = git@github.com:vim-scripts/pep8.git
 [submodule "bundle/py.test"]
-	path = bundle/py.test
+	path = pack/plugins/py.test
 	url = git@github.com:alfredodeza/pytest.vim.git
 [submodule "bundle/tasklist"]
-	path = bundle/tasklist
+	path = pack/plugins/tasklist
 	url = git@github.com:vim-scripts/TaskList.vim.git
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/plugins/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
 	url = git@github.com:sontek/rope-vim.git
 [submodule "bundle/bufstat"]
-	path = bundle/bufstat
+	path = pack/plugins/bufstat
 	url = git@github.com:rson/vim-bufstat.git
 [submodule "bundle/repeat"]
-	path = bundle/repeat
+	path = pack/plugins/repeat
 	url = git@github.com:tpope/vim-repeat.git
 [submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
+	path = pack/plugins/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "bundle/bufexplorer"]
-	path = bundle/bufexplorer
+	path = pack/plugins/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
 [submodule "bundle/CmdlineComplete"]
-	path = bundle/CmdlineComplete
+	path = pack/plugins/CmdlineComplete
 	url = git@github.com:vim-scripts/CmdlineComplete.git
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = git:/vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
 [submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+	path = pack/plugins/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
 [submodule "supertab"]
 	path = supertab
 	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/vcscommand"]
-	path = bundle/vcscommand
+	path = pack/plugins/vcscommand
 	url = git@github.com:vim-scripts/vcscommand.vim.git
 [submodule "bundle/taglist"]
-	path = bundle/taglist
+	path = pack/plugins/taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
 [submodule "bundle/RltvNmbr"]
-	path = bundle/RltvNmbr
+	path = pack/plugins/RltvNmbr
 	url = git@github.com:vim-scripts/RltvNmbr.vim.git
 	ignore = untracked
 [submodule "bundle/pylint"]
-	path = bundle/pylint
+	path = pack/plugins/pylint
 	url = git@github.com:vim-scripts/pylint.vim.git
 [submodule "bundle/c"]
-	path = bundle/c
+	path = pack/plugins/c
 	url = git@github.com:LouisPlisso/c.vim.git
 [submodule "bundle/bash-support"]
-	path = bundle/bash-support
+	path = pack/plugins/bash-support
 	url = git@github.com:LouisPlisso/bash-support.vim.git
 [submodule "bundle/python_syntax"]
-	path = bundle/python_syntax
+	path = pack/plugins/python_syntax
 	url = git@github.com:vim-scripts/python.vim--Vasiliev.git
 [submodule "bundle/python_move"]
-	path = bundle/python_move
+	path = pack/plugins/python_move
 	url = git@github.com:vim-scripts/python.vim.git
 [submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
+	path = pack/plugins/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
 [submodule "bundle/vim-fakeclip"]
-	path = bundle/vim-fakeclip
+	path = pack/plugins/vim-fakeclip
 	url = git@github.com:kana/vim-fakeclip.git
-[submodule "bundle/jedi-vim"]
-	path = jedi-vim
-	url = git@github.com:davidhalter/jedi-vim.git
 [submodule "bundle/YankRing.vim"]
-	path = bundle/YankRing.vim
+	path = pack/plugins/YankRing.vim
 	url = git@github.com:vim-scripts/YankRing.vim
 [submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
+	path = pack/plugins/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
 [submodule "bundle/vim-endwise"]
-	path = bundle/vim-endwise
+	path = pack/plugins/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
+	path = pack/plugins/vim-rails
 	url = git@github.com:tpope/vim-rails.git
 [submodule "bundle/vim-bundler"]
-	path = bundle/vim-bundler
+	path = pack/plugins/vim-bundler
 	url = git@github.com:tpope/vim-bundler.git
 [submodule "bundle/vim-rake"]
-	path = bundle/vim-rake
+	path = pack/plugins/vim-rake
 	url = git@github.com:tpope/vim-rake.git
 [submodule "bundle/vim-projectionist"]
-	path = bundle/vim-projectionist
+	path = pack/plugins/vim-projectionist
 	url = git@github.com:tpope/vim-projectionist.git
 [submodule "bundle/SimpylFold"]
-	path = bundle/SimpylFold
+	path = pack/plugins/SimpylFold
 	url = git@github.com:tmhedberg/SimpylFold.git
 [submodule "bundle/vim-nerdtree-tabs"]
-	path = bundle/vim-nerdtree-tabs
+	path = pack/plugins/vim-nerdtree-tabs
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
 [submodule "bundle/vim-go"]
-	path = bundle/vim-go
+	path = pack/plugins/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/ale"]
-	path = bundle/ale
+	path = pack/plugins/ale
 	url = https://github.com/dense-analysis/ale.git
 [submodule "bundle/fzf.vim"]
-	path = bundle/fzf.vim
+	path = pack/plugins/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
