@@ -100,6 +100,3 @@
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
-[submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
