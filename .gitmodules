@@ -4,9 +4,6 @@
 [submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = git@github.com:tpope/vim-surround.git
-[submodule "pack/plugins/start/supertab"]
-	path = pack/plugins/start/supertab
-	url = git@github.com:ervandew/supertab.git
 [submodule "pack/plugins/start/Command-T"]
 	path = pack/plugins/start/Command-T
 	url = git@github.com:wincent/Command-T.git
@@ -49,9 +46,6 @@
 [submodule "pack/plugins/start/vcscommand.vim"]
 	path = pack/plugins/start/vcscommand.vim
 	url = git@github.com:vim-scripts/vcscommand.vim.git
-[submodule "pack/plugins/start/taglist.vim"]
-	path = pack/plugins/start/taglist.vim
-	url = git@github.com:vim-scripts/taglist.vim.git
 [submodule "pack/plugins/start/RltvNmbr.vim"]
 	path = pack/plugins/start/RltvNmbr.vim
 	url = git@github.com:vim-scripts/RltvNmbr.vim.git
@@ -100,3 +94,18 @@
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
+[submodule "pack/plugins/start/deoplete.nvim"]
+	path = pack/plugins/start/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule "pack/plugins/start/nvim-yarp"]
+	path = pack/plugins/start/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp.git
+[submodule "pack/plugins/start/vim-hug-neovim-rpc"]
+	path = pack/plugins/start/vim-hug-neovim-rpc
+	url = git@github.com:roxma/vim-hug-neovim-rpc.git
+[submodule "pack/plugins/start/tagbar"]
+	path = pack/plugins/start/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "pack/plugins/start/asyncomplete.vim"]
+	path = pack/plugins/start/asyncomplete.vim
+	url = git@github.com:prabirshrestha/asyncomplete.vim.git
